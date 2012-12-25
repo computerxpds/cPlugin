@@ -1,0 +1,9 @@
+name: plugintut
+main: me.comp.plugintut.Main
+version: 0.1
+author: Computerxpds
+
+commands:
+  test:
+    description: Gives you things!
+    usage: /<command>
