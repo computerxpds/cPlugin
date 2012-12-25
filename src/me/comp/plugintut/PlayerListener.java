@@ -36,7 +36,7 @@ public class PlayerListener implements Listener {
 		
 		//fires messages when I join (I being computerxpds)
 		if(player.getName().equalsIgnoreCase("computerxpds")){
-			player.sendMessage(ChatColor.RED + "Welcome comp to the server!");
+			player.sendMessage(ChatColor.RED + "Welcome to the server, comp!");
 			player.sendMessage(ChatColor.BLUE + "Your gamemode is " + gamemode);
 			player.sendMessage(ChatColor.GREEN + "Bukkit version is " + buversio);
 			player.sendMessage(ChatColor.AQUA + "The Current world is " + player.getWorld());
