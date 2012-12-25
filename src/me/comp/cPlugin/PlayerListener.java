@@ -1,4 +1,4 @@
-package me.comp.plugintut;
+package me.comp.cPlugin;
 
 
 import org.bukkit.Bukkit;
