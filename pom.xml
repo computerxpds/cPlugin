@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>cPlugin</groupId>
   <artifactId>cPlugin</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -24,4 +24,11 @@
   	<connection>scm:git:git://github.com/computerxpds/cPlugin.git</connection>
   	<developerConnection>scm:git:git@github.com:computerxpds/cPlugin.git</developerConnection>
   </scm>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.bukkit</groupId>
+  		<artifactId>bukkit</artifactId>
+  		<version>1.4.6-R0.1</version>
+  	</dependency>
+  </dependencies>
 </project>
