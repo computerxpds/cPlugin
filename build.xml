@@ -25,6 +25,11 @@
             </fileset>
         </copy>
     </target>
+    <target name="compile"
+         description="compile the source" >
+                  <exec dir="${build.native}" executable="${make.cmd}" failonerror="true">
+                  </exec>
+                </target>
     <target name="clean">
         <delete dir="target/classes"/>
     </target>
