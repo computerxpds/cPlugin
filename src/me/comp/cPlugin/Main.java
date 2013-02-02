@@ -9,6 +9,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 	   public final Logger logger = Logger.getLogger("Minecraft");
+	   //incomplete
+	   String messages = (Main.this.getConfig().getString("messages"));
 	
 	
 	@Override
@@ -26,5 +28,9 @@ public class Main extends JavaPlugin {
 		this.getCommand("foo").setExecutor(new Foo());
 		PluginDescriptionFile pdffile = this.getDescription();
 		this.logger.info(pdffile.getName() + " is now enabled.");
+		getConfig().options().copyDefaults(true);
+		this.saveDefaultConfig();
 	}
+	
+
 }

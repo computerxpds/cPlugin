@@ -10,6 +10,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 public class PlayerListener implements Listener {
+	
 
 
 	@EventHandler
@@ -30,8 +31,8 @@ public class PlayerListener implements Listener {
 		mod = player.getName().equalsIgnoreCase("w00lly");
 		
 		//retired mod string.
-		boolean retmod = player.getName().equalsIgnoreCase("Veesters");
-		retmod = player.getName().equalsIgnoreCase("invigilium");
+		boolean retmod = player.getName().equalsIgnoreCase("");
+		retmod = player.getName().equalsIgnoreCase("");
 		
 		
 		//fires messages when I join (I being computerxpds)
@@ -40,7 +41,6 @@ public class PlayerListener implements Listener {
 			player.sendMessage(ChatColor.BLUE + "Your gamemode is " + gamemode);
 			player.sendMessage(ChatColor.GREEN + "Bukkit version is " + buversio);
 			player.sendMessage(ChatColor.AQUA + "The Current world is " + player.getWorld());
-			
 		}
 		//fires off when a mod joins.
 		if(mod){
@@ -49,8 +49,6 @@ public class PlayerListener implements Listener {
 		
 		if(retmod){
 			player.sendMessage(ChatColor.RED + retModMessage);
-		}
-		
+		}	
 	}
-
 }
