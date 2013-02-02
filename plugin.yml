@@ -1,9 +1,9 @@
-name: plugintut
-main: me.comp.plugintut.Main
-version: 0.1
+name: cPlugin
+main: me.comp.cPlugin.Main
+version: 0.0.5-SNAPSHOT
 author: Computerxpds
 
 commands:
-  test:
+  foo:
     description: Gives you things!
     usage: /<command>
