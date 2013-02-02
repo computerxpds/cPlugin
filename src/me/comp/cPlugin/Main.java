@@ -1,7 +1,7 @@
 package me.comp.cPlugin;
 
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
+import mc.comp.cPlugin.commands.Foo;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -18,18 +18,6 @@ public class Main extends JavaPlugin {
 	{
 		
 		getServer().getPluginManager().registerEvents(new PlayerListener(), this);
-	}
-	
-	@Override
-	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
-	{
-		if(cmd.getName().equalsIgnoreCase("Test"))
-		{
-			sender.sendMessage("That command worked.");
-			return true;
-		}
-		
-		return false;
-		
+		this.getCommand("foo").setExecutor(new Foo());
 	}
 }
