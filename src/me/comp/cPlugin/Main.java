@@ -15,7 +15,7 @@ public class Main extends JavaPlugin {
 	public void onDisable()
 	{
 		PluginDescriptionFile pdffile = this.getDescription();
-		this.logger.info(pdffile.getName() + "is now disabled.");
+		this.logger.info(pdffile.getName() + " is now disabled.");
 	}
 	
 	@Override
@@ -25,6 +25,6 @@ public class Main extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new PlayerListener(), this);
 		this.getCommand("foo").setExecutor(new Foo());
 		PluginDescriptionFile pdffile = this.getDescription();
-		this.logger.info(pdffile.getName() + "is now enabled.");
+		this.logger.info(pdffile.getName() + " is now enabled.");
 	}
 }
