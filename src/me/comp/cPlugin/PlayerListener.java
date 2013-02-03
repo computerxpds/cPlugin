@@ -10,8 +10,12 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 public class PlayerListener implements Listener {
+	Main plugin;
 	
-
+	public PlayerListener(Main instance){
+		plugin = instance; 
+		
+	}
 
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e){
@@ -41,6 +45,7 @@ public class PlayerListener implements Listener {
 			player.sendMessage(ChatColor.BLUE + "Your gamemode is " + gamemode);
 			player.sendMessage(ChatColor.GREEN + "Bukkit version is " + buversio);
 			player.sendMessage(ChatColor.AQUA + "The Current world is " + player.getWorld());
+			player.sendMessage(plugin.getConfig().getString("Message.to.send"));
 		}
 		//fires off when a mod joins.
 		if(mod){

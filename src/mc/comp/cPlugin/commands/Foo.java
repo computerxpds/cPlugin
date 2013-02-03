@@ -16,6 +16,7 @@ public class Foo implements CommandExecutor {
             sender.sendMessage("Sorry, but you need to execute this command as player.");
             return true;
         }
+        //if player then run command on player
         if (sender instanceof Player)
 		{
 			sender.sendMessage("That command worked.");
