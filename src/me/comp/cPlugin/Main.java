@@ -32,6 +32,6 @@ public class Main extends JavaPlugin {
 		config.options().copyDefaults(true);
 		this.saveDefaultConfig();
 	}
-	
+	String conmess = getConfig().getString("message");
 
 }
