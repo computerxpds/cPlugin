@@ -26,7 +26,7 @@ public class PlayerListener extends Main implements Listener {
 		Player player = e.getPlayer();
 		GameMode gamemode = player.getGameMode();
 		String buversio = Bukkit.getBukkitVersion();
-		//String conmess = plugin.getConfig().getString("message");
+		String conmess = plugin.getConfig().getString("message");
 		//mod list string. 
 		boolean mod = player.getName().equalsIgnoreCase("bluedawn76");
 		mod = player.getName().equalsIgnoreCase("reapersheart");
