@@ -1,3 +1,2 @@
-messages:
-
-   -this is a message
+Message.to.send: Hello, this is our message to send
+message: Hello
