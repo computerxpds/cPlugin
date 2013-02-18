@@ -28,7 +28,7 @@ public class Main extends JavaPlugin {
 		PluginDescriptionFile pdffile = this.getDescription();
 		this.logger.info(pdffile.getName() + " is now enabled.");
 		final FileConfiguration config = this.getConfig();
-		config.addDefault("Message.to.send", "Hello, this is our message to send");
+		config.addDefault("message", "Hello");
 		config.options().copyDefaults(true);
 		this.saveDefaultConfig();
 	}
