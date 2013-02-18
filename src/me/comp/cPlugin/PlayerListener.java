@@ -47,7 +47,7 @@ public class PlayerListener implements Listener {
 			player.sendMessage(ChatColor.GREEN + "Bukkit version is " + buversio);
 			player.sendMessage(ChatColor.AQUA + "The Current world is " + player.getWorld());
 			//player.sendMessage(plugin.getConfig().getString("Message.to.send"));
-			player.sendMessage(conmess);
+			player.sendMessage(ChatColor.RED + conmess);
 		}
 		//fires off when a mod joins.
 		if(mod){
