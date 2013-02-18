@@ -26,7 +26,7 @@ public class PlayerListener implements Listener {
 		Player player = e.getPlayer();
 		GameMode gamemode = player.getGameMode();
 		String buversio = Bukkit.getBukkitVersion();
-		String conmess = plugin.getConfig().getString("message");
+		//String conmess = plugin.getConfig().getString("message");
 		//mod list string. 
 		boolean mod = player.getName().equalsIgnoreCase("bluedawn76");
 		mod = player.getName().equalsIgnoreCase("reapersheart");
@@ -47,7 +47,7 @@ public class PlayerListener implements Listener {
 			player.sendMessage(ChatColor.GREEN + "Bukkit version is " + buversio);
 			player.sendMessage(ChatColor.AQUA + "The Current world is " + player.getWorld());
 			//player.sendMessage(plugin.getConfig().getString("Message.to.send"));
-			player.sendMessage(ChatColor.RED + conmess);
+			player.sendMessage(ChatColor.RED + plugin.getConfig().getString("message"));
 		}
 		//fires off when a mod joins.
 		if(mod){
