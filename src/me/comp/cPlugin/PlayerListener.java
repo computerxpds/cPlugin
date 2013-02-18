@@ -9,7 +9,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-public class PlayerListener implements Listener {
+public class PlayerListener extends Main implements Listener {
 	Main plugin;
 	
 	public PlayerListener(Main instance){
