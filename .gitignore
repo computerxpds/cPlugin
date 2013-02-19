@@ -4,3 +4,5 @@ doc/
 bin/
 .classpath
 .project
+
+.DS_Store
