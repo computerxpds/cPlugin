@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 	   public final Logger logger = Logger.getLogger("Minecraft");
-	
+	   FileConfiguration config;
 	
 	@Override
 	public void onDisable()
@@ -32,6 +32,6 @@ public class Main extends JavaPlugin {
 		config.options().copyDefaults(true);
 		this.saveDefaultConfig();
 	}
-	//public final String conmess = getConfig().getString("message");
+	String conmess = getConfig().getString("message");
 
 }
