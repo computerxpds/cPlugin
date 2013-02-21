@@ -10,7 +10,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 	   public final Logger logger = Logger.getLogger("Minecraft");
-	   FileConfiguration config;
 	
 	@Override
 	public void onDisable()
@@ -27,7 +26,8 @@ public class Main extends JavaPlugin {
 		this.getCommand("foo").setExecutor(new Foo());
 		PluginDescriptionFile pdffile = this.getDescription();
 		this.logger.info(pdffile.getName() + " is now enabled.");
-		final FileConfiguration config = this.getConfig();
+		FileConfiguration config;
+		config = this.getConfig();
 		config.addDefault("message", "Hello");
 		config.options().copyDefaults(true);
 		this.saveDefaultConfig();
