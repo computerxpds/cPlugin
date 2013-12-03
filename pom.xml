@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>cPlugin</groupId>
   <artifactId>cPlugin</artifactId>
-  <version>0.0.5-SNAPSHOT</version>
+  <version>0.0.6-SNAPSHOT</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -28,7 +28,7 @@
   	<dependency>
   		<groupId>org.bukkit</groupId>
   		<artifactId>bukkit</artifactId>
-  		<version>1.4.7-R1.0</version>
+  		<version>1.7.2-R0.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>
   <repositories>
